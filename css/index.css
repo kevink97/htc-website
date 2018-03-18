@@ -9,11 +9,15 @@ nav {
 }
 
 #navbarNav li > a {
-    color: white;
+    color: rgb(248, 245, 255);
 }
 
 nav .button {
-    color: white;
+    color: rgb(248, 245, 255);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(248, 245, 255);
 }
 
 header {
@@ -24,4 +28,8 @@ header {
     background-size: cover;
     background-position: center;
     min-height: 400px;
+}
+
+.jumbotron {
+    background-color: rgba(0,0,0,0);
 }
