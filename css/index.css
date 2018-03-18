@@ -5,20 +5,22 @@
 /* TODO: make fixed at top */
 nav {
     background: black;
-    background: linear-gradient(black, indigo);
+    background: linear-gradient(black, rgba(75, 4, 139, 1));
 }
 
 #navbarNav li > a {
     color: white;
 }
 
+nav .button {
+    color: white;
+}
 header {
     background-image: linear-gradient(
-        rgba(75, 0, 139, 0.45), 
-        rgba(75, 4, 130, 0.45)
+        rgba(75, 4, 139, 1), 
+        rgba(75, 4, 130, 0.3)
       ),url("../img/testheader.jpg");
     background-size: cover;
     background-position: center;
     min-height: 400px;
-   
 }
