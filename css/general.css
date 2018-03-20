@@ -1,0 +1,60 @@
+* {
+    font-family: 'Lato','Open Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif
+}
+
+/* TODO: make fixed at top */
+nav {
+    background: black;
+    background: linear-gradient(black, rgba(75, 4, 139, 1));
+}
+
+#navbarNav li > a {
+    color: rgb(248, 245, 255);
+}
+
+nav .button {
+    color: rgb(248, 245, 255);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(248, 245, 255);
+}
+.jumbotron {
+    background-color: rgba(0,0,0,0);
+}
+.navbar-light .navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+body {
+    background-color: #424242;
+    /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+footer{ 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0b0b0b;
+    height: 100px;
+    line-height: 100px; /* Vertically center the text there */
+    color: #acacacbb;
+}
+header {
+    background-image: linear-gradient(
+        rgba(75, 4, 139, 1), 
+        rgba(75, 4, 130, 0.3)
+      ),url("../img/testheader.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 225px;
+    max-height: 300px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+}
