@@ -1,0 +1,71 @@
+html {
+    background-image: linear-gradient(
+        rgba(33, 0, 62, 1), 
+        rgba(33, 0, 62, 0.3)
+      ),url("../img/testheader.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+header {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    min-height: 225px;
+    max-height: 300px;
+    background-color: rgba(0,0,0,0.0);
+    opacity: none;
+    box-shadow: none;
+}
+
+body {
+    background-color: rgba(0,0,0,0.0);
+}
+.card {
+    background-color: #1b1b1b;
+    color: #dedede;
+    opacity: 0.95;
+    max-height: 350px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    margin: auto;
+    max-width: 400px;
+}
+
+.card-title {
+    height: 20%;
+    margin-bottom: 0em;
+}
+
+.center {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -75px; /* margin is -0.5 * dimension */
+    margin-top: -5px; 
+}​
+
+.card-text {
+    font-size: 0.75rem;
+    opacity: 0.65;
+}
+
+.btn {
+    background-color: #12005e;
+    border:none;
+    color: #dededed2;
+}
+
+.btn:hover {
+    background-color: #4A148C;
+    color: #dededed2;
+}
+
+.small-text {
+    font-size: .6em !important;
+    color: #dededed2;
+}

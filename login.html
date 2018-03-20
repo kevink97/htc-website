@@ -9,8 +9,11 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+    <!-- custom css -->
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Husky Tennis Club</title>
 </head>
 
@@ -38,36 +41,18 @@
         <header>
             <div class="jumbotron jumbotron-fluid text-white">
                 <div class="container text-center">
-                    <h1>Member Information</h1>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Login</h5>
+                            <p class="card-text border-top pt-2">
+                                <div id="firebaseui-auth-container"></div>
+                                <div class="small-text">Email login will be implemented soon!</div>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
-        <div class="container">
-            <div class="card-deck text-center mt-5 pb-5">
-                <div class="card">
-                    <img class="card-img-top" src="img/dues.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <div class="center">Club Dues</div>
-                        </h5>
-                        <p class="card-text border-top pt-2">
-                            Dues for club events, fees, and tournaments can be tracked.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/tournament.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <div class="center">Tournaments</div>
-                        </h5>
-                        <p class="card-text border-top pt-2">
-                            Sign up for upcoming matches.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer class="footer">
@@ -83,6 +68,10 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

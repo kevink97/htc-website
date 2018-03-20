@@ -5,7 +5,7 @@
 /* TODO: make fixed at top */
 nav {
     background: black;
-    background: linear-gradient(black, rgba(75, 4, 139, 1));
+    background: linear-gradient(black, rgba(33, 0, 62, 1));
 }
 
 #navbarNav li > a {
@@ -22,8 +22,8 @@ nav .button {
 
 header {
     background-image: linear-gradient(
-        rgba(75, 4, 139, 1), 
-        rgba(75, 4, 130, 0.3)
+        rgba(33, 0, 62, 1), 
+        rgba(33, 0, 62, 0.3)
       ),url("../img/testheader.jpg");
     background-size: cover;
     background-position: center;
