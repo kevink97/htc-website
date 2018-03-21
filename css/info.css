@@ -34,3 +34,13 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
 }
 
+.contact-icons svg {
+    width: 25px;
+    height: auto;
+    fill: #FFF;
+    text-decoration: none; 
+}
+
+.contact-icons a:focus svg, .contact-icons a:hover svg {
+    fill: #cccccc; 
+}
