@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/dues.css">
-    <title>Husky Tennis Club</title> </head>
+    <title>Husky Tennis Club</title>
+</head>
 
 <body>
     <div class="wrapper">
@@ -41,8 +42,68 @@
                 </div>
             </div>
         </header>
-        <div class="container">
-            <!-- PUT COTENT HERE -->
+        <div id="content" class="container large-screen">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Date">04/01/2016</td>
+                        <td data-label="Details">Visa - 3412</td>
+                        <td data-label="Amount">$1,190</td>
+                        <td data-label="Actions">
+                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="i">
+                                Pay now!
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date">04/01/2016</td>
+                        <td data-label="Details">Visa - 3412</td>
+                        <td data-label="Amount">$1,190</td>
+                        <td data-label="Actions">
+                            <button type="button" id="btn2" class="btn btn-dark">
+                                Pay now!
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date">04/01/2016</td>
+                        <td data-label="Details">Visa - 3412</td>
+                        <td data-label="Amount">$1,190</td>
+                        <td data-label="Actions">
+                            <button type="button" class="btn btn-dark">
+                                Pay now!
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="modal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -76,6 +137,10 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+    <script src="js/dues.js"></script>
 </body>
 
 </html>
