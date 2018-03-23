@@ -57,7 +57,7 @@ header {
     background-image: linear-gradient(
         rgba(33, 0, 62, 1), 
         rgba(33, 0, 62, 0.3)
-      ),url("../img/testheader.jpg");
+      ),url("../img/header.jpg");
     background-size: cover;
     background-position: center;
     min-height: 225px;
