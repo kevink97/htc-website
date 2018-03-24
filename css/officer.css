@@ -1,0 +1,23 @@
+.first-row {
+   
+    position: relative;
+    left: 65px;
+    margin:auto;
+    
+
+}
+
+.second-row {
+    position: relative;
+    left: 40px;
+    margin:auto;
+}
+
+#doug {
+    font-size: 31.5px;
+}
+
+#noon {
+    font-size: 25px;
+}
+
