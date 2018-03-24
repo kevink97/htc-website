@@ -1,16 +1,29 @@
+// Initialize Firebase
+/*
+var config = {
+  apiKey: "AIzaSyAJGFuMK-DhPuTgd61HLL47RMtcmXX7ckM",
+  authDomain: "uw-htc-website.firebaseapp.com",
+  databaseURL: "https://uw-htc-website.firebaseio.com",
+  projectId: "uw-htc-website",
+  storageBucket: "uw-htc-website.appspot.com",
+  messagingSenderId: "771697394602"
+};
+firebase.initializeApp(config);
+
 firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      var displayName = user.displayName;
-      var email = user.email;
-      var emailVerified = user.emailVerified;
-      var photoURL = user.photoURL;
-      var isAnonymous = user.isAnonymous;
-      var uid = user.uid;
-      var providerData = user.providerData;
-      // ...
-    } else {
-      // User is signed out.
-      // ...
-    }
-  });
+  if (user) {
+      // TODO: implement when user is logged in
+  }
+  else {
+      // TODO: implement when user is logged off
+  }
+});
+*/
+
+$('#dues').click(function() {
+  window.location.href = 'dues.html';
+});
+
+$('#tournament').click(function() {
+  window.location.href = 'tournament.html';
+});
