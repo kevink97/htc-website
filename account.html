@@ -9,8 +9,9 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.0-beta/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/#FILLTHISWITHCUSTOMCSS#.css">
+    <link rel="stylesheet" href="css/account.css">
     <title>Husky Tennis Club</title>
 </head>
 
@@ -38,29 +39,73 @@
         <header>
             <div class="jumbotron jumbotron-fluid text-white">
                 <div class="container text-center">
-                    <h1>PAGE TITLE</h1>
+                    <h1>Account Details</h1>
                 </div>
             </div>
         </header>
         <div class="container">
-            <!-- PUT COTENT HERE -->
+            <!-- Name, Gender, Student Number, USTA -->
+            <table id="table">
+                <tbody>
+                    <tr>
+                        <td style="text-align:center; font-size: 20px; font-weight: bold;" data-label="">
+                            Basic Information
+                        </td>
+                        <td data-label="Name" data-toggle="tooltip" data-placement="left" title="For all textboxes, press Enter to save, click outside to cancel">
+                            <input type="text" class="form-control-plaintext ro" id="name" value="Brian Hou">
+                        </td>
+                        <td data-label="UW Student Number">
+                            <input type="text" class="form-control-plaintext ro" id="studentnum" value="1234567">
+                        </td>
+                        <td data-label="Gender">
+                            <select id="gender" data-container="tbody" data-tickIcon="none" class="selectpicker" data-width="100%">
+                                <option class="opt">Male</option>
+                                <option class="opt">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center; font-size: 20px; font-weight: bold;" data-label="">
+                            USTA Information
+                        </td>
+                        <td data-label="USTA Number">
+                            <input type="text" class="form-control-plaintext ro" id="ustanum" value="1234567890">
+                        </td>
+                        <td data-label="NTRP Rating">
+                            <select id="rank" class="selectpicker" data-width="100%">
+                                <option class="opt">No Rating/Unknown</option>
+                                <option class="opt">2.0</option>
+                                <option class="opt">2.5</option>
+                                <option class="opt">3.0</option>
+                                <option class="opt">3.5</option>
+                                <option class="opt">4.0</option>
+                                <option class="opt">4.5</option>
+                                <option class="opt">5.0+</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
+    <div id="snackbar"></div>
+
     <footer class="footer">
-            <div class="container text-center contact-icons">
-                <div>
-                    Made with
-                    <i class="icon ion-heart"></i> by HTC Web Dev Team
-                    <br />
-                    <a href="https://www.facebook.com/groups/huskytennisclub/" class="social" aria-label="facebook page">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 64 64">
-                            <path d="M36.4625053,60H25.9625034V32h-7v-9.625h7v-5.6000004C25.9625053,8.7250004,28.0625057,4,37.3375053,4h7.6999969v9.625 h-4.8999977c-3.6749992,0-3.8500023,1.4000006-3.8500023,3.8500004V22.375h8.75l-0.875,9.625h-7.6999969V60z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/uw_htc" class="social" aria-label="instagram page">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 64 64">
-                            <path d="M58.02191,21.27509c-0.1781-2.67126-0.53424-4.63013-1.24658-6.23291c-0.71234-1.78082-1.60272-3.20544-3.0274-4.63013
+        <div class="container text-center contact-icons">
+            <div>
+                Made with
+                <i class="icon ion-heart"></i> by HTC Web Dev Team
+                <br />
+                <a href="https://www.facebook.com/groups/huskytennisclub/" class="social" aria-label="facebook page">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 64 64">
+                        <path d="M36.4625053,60H25.9625034V32h-7v-9.625h7v-5.6000004C25.9625053,8.7250004,28.0625057,4,37.3375053,4h7.6999969v9.625 h-4.8999977c-3.6749992,0-3.8500023,1.4000006-3.8500023,3.8500004V22.375h8.75l-0.875,9.625h-7.6999969V60z"
+                        />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/uw_htc" class="social" aria-label="instagram page">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 64 64">
+                        <path d="M58.02191,21.27509c-0.1781-2.67126-0.53424-4.63013-1.24658-6.23291c-0.71234-1.78082-1.60272-3.20544-3.0274-4.63013
                             c-1.42462-1.42468-2.8493-2.31506-4.63013-3.0274c-1.60272-0.71234-3.56165-1.06848-6.23285-1.24658
                             c-2.8493-0.17804-3.73975-0.17804-10.68494-0.17804s-7.83563,0-10.68494,0.17804c-2.6712,0.1781-4.63013,0.53424-6.23285,1.24658
                             c-1.78082,0.71234-3.20551,1.60272-4.63013,3.0274c-1.42468,1.42468-2.31512,2.8493-3.0274,4.63013
@@ -82,33 +127,33 @@
                             c1.24658,0.53424,2.13696,1.06848,3.0274,1.95892c0.89038,0.89038,1.42462,1.78082,1.95892,3.0274
                             c0.35614,0.89038,0.71228,2.31506,0.89038,4.80817c0.1781,2.67126,0.1781,3.56165,0.1781,10.5069
                             C53.56989,38.90521,53.56989,39.61755,53.39178,42.46686z"></path>
-                            <path d="M32.20001,18.60382c-7.30139,0-13.1781,5.87671-13.1781,13.1781s5.87671,13.1781,13.1781,13.1781
+                        <path d="M32.20001,18.60382c-7.30139,0-13.1781,5.87671-13.1781,13.1781s5.87671,13.1781,13.1781,13.1781
                             c7.30133,0,13.1781-5.87671,13.1781-13.1781S39.50134,18.60382,32.20001,18.60382z M32.20001,40.32983
                             c-4.80823,0-8.54791-3.91779-8.54791-8.54791s3.91779-8.54797,8.54791-8.54797s8.54791,3.91785,8.54791,8.54797
                             S37.00824,40.32983,32.20001,40.32983z"></path>
-                            <path d="M46.09039,15.04218c-1.60272,0-3.0274,1.42468-3.0274,3.0274s1.24658,3.0274,3.0274,3.0274
+                        <path d="M46.09039,15.04218c-1.60272,0-3.0274,1.42468-3.0274,3.0274s1.24658,3.0274,3.0274,3.0274
                             c1.60278,0,3.0274-1.24658,3.0274-3.0274S47.69318,14.86414,46.09039,15.04218z"></path>
-                        </svg>
-                    </a>
-                    <a href="mailto:tennis@u.washington.edu" class="social" aria-label="send email">
-                        <svg class="svg-icon"  height="40" viewBox="0 0 20 20">
-                            <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
-                        </svg>
-                    </a>
-                </div>
+                    </svg>
+                </a>
+                <a href="mailto:tennis@u.washington.edu" class="social" aria-label="send email">
+                    <svg class="svg-icon" height="40" viewBox="0 0 20 20">
+                        <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+                    </svg>
+                </a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.0-beta/js/bootstrap-select.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
-    <script src="account.js"></script>
+    <script src="js/account.js"></script>
 </body>
 
 </html>
