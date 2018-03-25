@@ -1,23 +1,25 @@
 .first-row {
    
     position: relative;
-    left: 65px;
+   
     margin:auto;
     
 
 }
 
-.second-row {
-    position: relative;
-    left: 40px;
-    margin:auto;
+
+.name {
+   text-align: center;
+   Color: white;
 }
 
-#doug {
-    font-size: 31.5px;
+.profile-pic {
+    display: block;
+    margin: auto;
 }
 
-#noon {
-    font-size: 25px;
+.para-text {
+
+    Color: rgba(255, 255, 255, 0.884);
 }
 
