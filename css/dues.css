@@ -63,3 +63,7 @@ table td:before {
 table td:last-child {
     border-bottom: 0;
 }
+
+.nowrap {
+    white-space: nowrap;
+}
