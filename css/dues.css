@@ -67,3 +67,29 @@ table td:last-child {
 .nowrap {
     white-space: nowrap;
 }
+
+span > a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.modal-content {
+    background-color: #100f0f !important;
+    color: #dedede;
+}
+.close {
+    color: white;
+}
+
+.close:hover {
+    color: #dedede;
+}
+
+.modal-header, .modal-footer {
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.modal-footer > button {
+    width: 150px;
+}

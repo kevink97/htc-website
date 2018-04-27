@@ -39,7 +39,7 @@
             <div class="jumbotron jumbotron-fluid text-white">
                 <div class="container text-center">
                     <h1>Club Dues</h1>
-                    <p>To pay for club dues, you can pay with cash or through Venmo to <span class="nowrap">@Doug-Doenges</span>. </p>
+                    <p>To pay for club dues, you can pay with cash or through Venmo to <span class="nowrap"><a href="https://venmo.com/Doug-Doenges">@Doug-Doenges</a></span>.</p>
                 </div>
             </div>
         </header>
@@ -59,7 +59,7 @@
                         <td data-label="Details">Victoria Tournament</td>
                         <td data-label="Amount">$100</td>
                         <td style="text-align:center" data-label="">
-                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="i">
+                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal">
                                 Confirm Payment!
                             </button>
                         </td>
@@ -69,7 +69,7 @@
                         <td data-label="Details">Annual Membership</td>
                         <td data-label="Amount">$40</td>
                         <td style="text-align:center" data-label="">
-                            <button type="button" id="btn2" class="btn btn-dark">
+                        <button type="button" id="btn2" class="btn btn-dark">
                                 Confirm Payment!
                             </button>
                         </td>
@@ -86,11 +86,11 @@
                     </tr>
                 </tbody>
             </table>
-            <div id="modal" class="modal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
+            <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Modal title</h5>
+                            <h5 class="modal-title">Confirm Payment</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -98,8 +98,8 @@
                         <div class="modal-body">
                             <p>Modal body text goes here.</p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="modal-footer" style="margin: auto;">
+                            <button type="button" class="btn btn-dark">Confirm Payment</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
