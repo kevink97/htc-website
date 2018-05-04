@@ -7,19 +7,19 @@ var config = {
     storageBucket: "uw-htc-website.appspot.com",
     messagingSenderId: "771697394602"
   };
-  firebase.initializeApp(config);
+firebase.initializeApp(config);
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+      // TODO: implement when user is logged in
+  }
+  else {
+      // TODO: implement when user is logged off
+  }
+});
   
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        // TODO: implement when user is logged in
-    }
-    else {
-        // TODO: implement when user is logged off
-    }
-  })
   
-  
-  var desktopBtn = $("#desktop");
+var desktopBtn = $("#desktop");
 var mobileBtn = $("#mobile");
 var body = $("#content");
 
