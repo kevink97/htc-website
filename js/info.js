@@ -1,5 +1,4 @@
 // Initialize Firebase
-/*
 var config = {
   apiKey: "AIzaSyAJGFuMK-DhPuTgd61HLL47RMtcmXX7ckM",
   authDomain: "uw-htc-website.firebaseapp.com",
@@ -16,9 +15,9 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
   else {
       // TODO: implement when user is logged off
+    window.location.href = 'login.html';
   }
 });
-*/
 
 $('#dues').click(function() {
   window.location.href = 'dues.html';
